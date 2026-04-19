@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e2c0ebf52e1125262999fb4aec54f4f7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e2c0ebf52e1125262999fb4aec54f4f7" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e2c0ebf52e1125262999fb4aec54f4f7 = L.map(
+                "map_e2c0ebf52e1125262999fb4aec54f4f7",
+                {
+                    center: [45.0, 35.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "maxBounds": [
+[
+-90,
+-180,
+],
+[
+90,
+180,
+],
+],
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+  "noWrap": true,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f03828a27ab13f07a2852ee264aa1271 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": true,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_f03828a27ab13f07a2852ee264aa1271.addTo(map_e2c0ebf52e1125262999fb4aec54f4f7);
+        
+    
+            var feature_group_d71867bb00ed538b84b72732a2c9ee0f = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_d33ef52ec7ec576a4658f6a999642358 = L.marker(
+                [41.7151, 44.8271],
+                {
+  "name": "Tbilisi, Georgia",
+}
+            ).addTo(feature_group_d71867bb00ed538b84b72732a2c9ee0f);
+        
+    
+            var icon_07aabc94c36976077bbbd5ed7b59169e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2e5d4404c011d094158705a88f4f504b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3b7d3662ce06e9d0a0712c00cb30314e = $(`<div id="html_3b7d3662ce06e9d0a0712c00cb30314e" style="width: 100.0%; height: 100.0%;">     <div style="width: 260px; font-family: sans-serif; line-height: 1.4;">         <h4 style="margin:0; color:#333;">Tbilisi</h4>         <h5 style="margin:0; color:gray;">Georgia</h5>         <p style="font-size:11px; margin: 2px 0;">Population: 3.7 Million</p>         <hr style="border: 0; border-top: 1px solid #eee;">                  <p style="background-color: #f8f9fa; padding: 5px; border-left: 3px solid orange;">             <b>Reality Check:</b> Competitive Oligarchy         </p>                  <p style="font-size: 0.9em; color: #555;"><i><b>History Note:</b> Rose Revolution (2003): A pivot toward the West.</i></p>                  <p style="font-weight: bold; color: black;">             Status: Hybrid / Internal Tension         </p>     </div>     </div>`)[0];
+                popup_2e5d4404c011d094158705a88f4f504b.setContent(html_3b7d3662ce06e9d0a0712c00cb30314e);
+            
+        
+
+        marker_d33ef52ec7ec576a4658f6a999642358.bindPopup(popup_2e5d4404c011d094158705a88f4f504b)
+        ;
+
+        
+    
+    
+            marker_d33ef52ec7ec576a4658f6a999642358.bindTooltip(
+                `<div>
+                     Tbilisi, Georgia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d33ef52ec7ec576a4658f6a999642358.setIcon(icon_07aabc94c36976077bbbd5ed7b59169e);
+            
+    
+            var marker_e8d70614ac475a442004d626afe7af7a = L.marker(
+                [55.7558, 37.6173],
+                {
+  "name": "Moscow, Russia",
+}
+            ).addTo(feature_group_d71867bb00ed538b84b72732a2c9ee0f);
+        
+    
+            var icon_a37c8200660e1dcb33bb4ebe4df448f9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "exclamation-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0c6f154c094affabcf85f9a5161e36ce = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f7b1f1d76f999fe9cc77e08b17bb5e8c = $(`<div id="html_f7b1f1d76f999fe9cc77e08b17bb5e8c" style="width: 100.0%; height: 100.0%;">     <div style="width: 260px; font-family: sans-serif; line-height: 1.4;">         <h4 style="margin:0; color:#333;">Moscow</h4>         <h5 style="margin:0; color:gray;">Russia</h5>         <p style="font-size:11px; margin: 2px 0;">Population: 144 Million</p>         <hr style="border: 0; border-top: 1px solid #eee;">                  <p style="background-color: #f8f9fa; padding: 5px; border-left: 3px solid red;">             <b>Reality Check:</b> Authoritarian State         </p>                  <p style="font-size: 0.9em; color: #555;"><i><b>History Note:</b> 1991 Collapse: Transition from Soviet central planning.</i></p>                  <p style="font-weight: bold; color: red;">             Status: ACTIVE CONFLICT         </p>     </div>     </div>`)[0];
+                popup_0c6f154c094affabcf85f9a5161e36ce.setContent(html_f7b1f1d76f999fe9cc77e08b17bb5e8c);
+            
+        
+
+        marker_e8d70614ac475a442004d626afe7af7a.bindPopup(popup_0c6f154c094affabcf85f9a5161e36ce)
+        ;
+
+        
+    
+    
+            marker_e8d70614ac475a442004d626afe7af7a.bindTooltip(
+                `<div>
+                     Moscow, Russia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e8d70614ac475a442004d626afe7af7a.setIcon(icon_a37c8200660e1dcb33bb4ebe4df448f9);
+            
+    
+            var marker_2f7d0afbef854a8de9ad56ff5e88e7fa = L.marker(
+                [39.9042, 116.4074],
+                {
+  "name": "Beijing, China",
+}
+            ).addTo(feature_group_d71867bb00ed538b84b72732a2c9ee0f);
+        
+    
+            var icon_7f51a30cfa41869ce3b3d474956215c5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "eye-open",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1d8a5b2cade17671e197fbfd15390218 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d036a9388060ee23f083212992b30ed6 = $(`<div id="html_d036a9388060ee23f083212992b30ed6" style="width: 100.0%; height: 100.0%;">     <div style="width: 260px; font-family: sans-serif; line-height: 1.4;">         <h4 style="margin:0; color:#333;">Beijing</h4>         <h5 style="margin:0; color:gray;">China</h5>         <p style="font-size:11px; margin: 2px 0;">Population: 1.4 Billion</p>         <hr style="border: 0; border-top: 1px solid #eee;">                  <p style="background-color: #f8f9fa; padding: 5px; border-left: 3px solid darkred;">             <b>Reality Check:</b> Totalitarian State         </p>                  <p style="font-size: 0.9em; color: #555;"><i><b>History Note:</b> 1949 Revolution: Establishment of the current system.</i></p>                  <p style="font-weight: bold; color: black;">             Status: Systemic Repression         </p>     </div>     </div>`)[0];
+                popup_1d8a5b2cade17671e197fbfd15390218.setContent(html_d036a9388060ee23f083212992b30ed6);
+            
+        
+
+        marker_2f7d0afbef854a8de9ad56ff5e88e7fa.bindPopup(popup_1d8a5b2cade17671e197fbfd15390218)
+        ;
+
+        
+    
+    
+            marker_2f7d0afbef854a8de9ad56ff5e88e7fa.bindTooltip(
+                `<div>
+                     Beijing, China
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2f7d0afbef854a8de9ad56ff5e88e7fa.setIcon(icon_7f51a30cfa41869ce3b3d474956215c5);
+            
+    
+            var marker_5da54f98357b3d04ca70a84aaaec2fe6 = L.marker(
+                [38.9072, -77.0369],
+                {
+  "name": "Washington D.C., USA",
+}
+            ).addTo(feature_group_d71867bb00ed538b84b72732a2c9ee0f);
+        
+    
+            var icon_120e503cacfc625daee98fb1a82cc11f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5e66f124722b51109d3c6c441811f97d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6b0fc9a5961db3783ba97252e7171232 = $(`<div id="html_6b0fc9a5961db3783ba97252e7171232" style="width: 100.0%; height: 100.0%;">     <div style="width: 260px; font-family: sans-serif; line-height: 1.4;">         <h4 style="margin:0; color:#333;">Washington D.C.</h4>         <h5 style="margin:0; color:gray;">USA</h5>         <p style="font-size:11px; margin: 2px 0;">Population: 333 Million</p>         <hr style="border: 0; border-top: 1px solid #eee;">                  <p style="background-color: #f8f9fa; padding: 5px; border-left: 3px solid green;">             <b>Reality Check:</b> Flawed Democracy         </p>                  <p style="font-size: 0.9em; color: #555;"><i><b>History Note:</b> 1776 Independence: Foundation of the federal republic.</i></p>                  <p style="font-weight: bold; color: black;">             Status: Stable / Polarized         </p>     </div>     </div>`)[0];
+                popup_5e66f124722b51109d3c6c441811f97d.setContent(html_6b0fc9a5961db3783ba97252e7171232);
+            
+        
+
+        marker_5da54f98357b3d04ca70a84aaaec2fe6.bindPopup(popup_5e66f124722b51109d3c6c441811f97d)
+        ;
+
+        
+    
+    
+            marker_5da54f98357b3d04ca70a84aaaec2fe6.bindTooltip(
+                `<div>
+                     Washington D.C., USA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5da54f98357b3d04ca70a84aaaec2fe6.setIcon(icon_120e503cacfc625daee98fb1a82cc11f);
+            
+    
+            var marker_c575d69b1db6d5fc720ac81521459b0f = L.marker(
+                [51.5074, -0.1278],
+                {
+  "name": "London, United Kingdom",
+}
+            ).addTo(feature_group_d71867bb00ed538b84b72732a2c9ee0f);
+        
+    
+            var icon_451155ab5764370576b91c31ce5e4c85 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_78d3de972356ba34ca621195d4117d67 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b10ada442fe22e5b11044abaf4cf5eb2 = $(`<div id="html_b10ada442fe22e5b11044abaf4cf5eb2" style="width: 100.0%; height: 100.0%;">     <div style="width: 260px; font-family: sans-serif; line-height: 1.4;">         <h4 style="margin:0; color:#333;">London</h4>         <h5 style="margin:0; color:gray;">United Kingdom</h5>         <p style="font-size:11px; margin: 2px 0;">Population: 67 Million</p>         <hr style="border: 0; border-top: 1px solid #eee;">                  <p style="background-color: #f8f9fa; padding: 5px; border-left: 3px solid green;">             <b>Reality Check:</b> Stable Democracy / Post-Brexit Transition         </p>                  <p style="font-size: 0.9em; color: #555;"><i><b>History Note:</b> Magna Carta (1215): The ancient root of constitutional law.</i></p>                  <p style="font-weight: bold; color: black;">             Status: Stable / Diplomatic Re-alignment         </p>     </div>     </div>`)[0];
+                popup_78d3de972356ba34ca621195d4117d67.setContent(html_b10ada442fe22e5b11044abaf4cf5eb2);
+            
+        
+
+        marker_c575d69b1db6d5fc720ac81521459b0f.bindPopup(popup_78d3de972356ba34ca621195d4117d67)
+        ;
+
+        
+    
+    
+            marker_c575d69b1db6d5fc720ac81521459b0f.bindTooltip(
+                `<div>
+                     London, United Kingdom
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c575d69b1db6d5fc720ac81521459b0f.setIcon(icon_451155ab5764370576b91c31ce5e4c85);
+            
+    
+            var marker_c68cf7d6be21c2c30b23195cb76e53fc = L.marker(
+                [50.4501, 30.5234],
+                {
+  "name": "Kyiv, Ukraine",
+}
+            ).addTo(feature_group_d71867bb00ed538b84b72732a2c9ee0f);
+        
+    
+            var icon_1da441755413fc8ce6b80c5e74a021cc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "exclamation-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_73a0a55660d931f3a9850b7cf03ea33f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_444b92f9df84a51f629badbc632c0f1c = $(`<div id="html_444b92f9df84a51f629badbc632c0f1c" style="width: 100.0%; height: 100.0%;">     <div style="width: 260px; font-family: sans-serif; line-height: 1.4;">         <h4 style="margin:0; color:#333;">Kyiv</h4>         <h5 style="margin:0; color:gray;">Ukraine</h5>         <p style="font-size:11px; margin: 2px 0;">Population: 43 Million</p>         <hr style="border: 0; border-top: 1px solid #eee;">                  <p style="background-color: #f8f9fa; padding: 5px; border-left: 3px solid red;">             <b>Reality Check:</b> Resilient Democracy         </p>                  <p style="font-size: 0.9em; color: #555;"><i><b>History Note:</b> Independence (1991): The departure from Soviet control toward Europe.</i></p>                  <p style="font-weight: bold; color: red;">             Status: ACTIVE CONFLICT / DEFENSIVE WAR         </p>     </div>     </div>`)[0];
+                popup_73a0a55660d931f3a9850b7cf03ea33f.setContent(html_444b92f9df84a51f629badbc632c0f1c);
+            
+        
+
+        marker_c68cf7d6be21c2c30b23195cb76e53fc.bindPopup(popup_73a0a55660d931f3a9850b7cf03ea33f)
+        ;
+
+        
+    
+    
+            marker_c68cf7d6be21c2c30b23195cb76e53fc.bindTooltip(
+                `<div>
+                     Kyiv, Ukraine
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c68cf7d6be21c2c30b23195cb76e53fc.setIcon(icon_1da441755413fc8ce6b80c5e74a021cc);
+            
+    
+            var marker_cb0d05605e6b633b71db3df6bea3eaf3 = L.marker(
+                [28.6139, 77.209],
+                {
+  "name": "New Delhi, India",
+}
+            ).addTo(feature_group_d71867bb00ed538b84b72732a2c9ee0f);
+        
+    
+            var icon_9f2d9eaa56d64df6eb1c7b6a8ff2de3e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ef9bfde4ea139fd2e094bf6cbae6e63b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ede8932510a77175953398b8a3da2659 = $(`<div id="html_ede8932510a77175953398b8a3da2659" style="width: 100.0%; height: 100.0%;">     <div style="width: 260px; font-family: sans-serif; line-height: 1.4;">         <h4 style="margin:0; color:#333;">New Delhi</h4>         <h5 style="margin:0; color:gray;">India</h5>         <p style="font-size:11px; margin: 2px 0;">Population: 1.4 Billion</p>         <hr style="border: 0; border-top: 1px solid #eee;">                  <p style="background-color: #f8f9fa; padding: 5px; border-left: 3px solid orange;">             <b>Reality Check:</b> Democratic State / Rising Nationalism         </p>                  <p style="font-size: 0.9em; color: #555;"><i><b>History Note:</b> 1947 Independence: The end of British rule and the birth of a secular republic.</i></p>                  <p style="font-weight: bold; color: black;">             Status: Emerging Global Power         </p>     </div>     </div>`)[0];
+                popup_ef9bfde4ea139fd2e094bf6cbae6e63b.setContent(html_ede8932510a77175953398b8a3da2659);
+            
+        
+
+        marker_cb0d05605e6b633b71db3df6bea3eaf3.bindPopup(popup_ef9bfde4ea139fd2e094bf6cbae6e63b)
+        ;
+
+        
+    
+    
+            marker_cb0d05605e6b633b71db3df6bea3eaf3.bindTooltip(
+                `<div>
+                     New Delhi, India
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cb0d05605e6b633b71db3df6bea3eaf3.setIcon(icon_9f2d9eaa56d64df6eb1c7b6a8ff2de3e);
+            
+    
+            var marker_7d31c12332eef0d54d1048c1a75af8c4 = L.marker(
+                [40.4093, 49.8671],
+                {
+  "name": "Baku, Azerbaijan",
+}
+            ).addTo(feature_group_d71867bb00ed538b84b72732a2c9ee0f);
+        
+    
+            var icon_234af1ac2caa60cc3aa5759f72fa0865 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "exclamation-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a1952ba68594b5eb21a17d2da3044d06 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4d6763539f74f2d6963246a585a6d417 = $(`<div id="html_4d6763539f74f2d6963246a585a6d417" style="width: 100.0%; height: 100.0%;">     <div style="width: 260px; font-family: sans-serif; line-height: 1.4;">         <h4 style="margin:0; color:#333;">Baku</h4>         <h5 style="margin:0; color:gray;">Azerbaijan</h5>         <p style="font-size:11px; margin: 2px 0;">Population: 10 Million</p>         <hr style="border: 0; border-top: 1px solid #eee;">                  <p style="background-color: #f8f9fa; padding: 5px; border-left: 3px solid red;">             <b>Reality Check:</b> Authoritarian State / Resource Wealth         </p>                  <p style="font-size: 0.9em; color: #555;"><i><b>History Note:</b> 1918 Independence: Briefly the first secular democratic republic in the Muslim world.</i></p>                  <p style="font-weight: bold; color: black;">             Status: Regional Energy Power         </p>     </div>     </div>`)[0];
+                popup_a1952ba68594b5eb21a17d2da3044d06.setContent(html_4d6763539f74f2d6963246a585a6d417);
+            
+        
+
+        marker_7d31c12332eef0d54d1048c1a75af8c4.bindPopup(popup_a1952ba68594b5eb21a17d2da3044d06)
+        ;
+
+        
+    
+    
+            marker_7d31c12332eef0d54d1048c1a75af8c4.bindTooltip(
+                `<div>
+                     Baku, Azerbaijan
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7d31c12332eef0d54d1048c1a75af8c4.setIcon(icon_234af1ac2caa60cc3aa5759f72fa0865);
+            
+    
+            var marker_e554c305adad35b59346ee0dcfc8e939 = L.marker(
+                [41.2995, 69.2401],
+                {
+  "name": "Tashkent, Uzbekistan",
+}
+            ).addTo(feature_group_d71867bb00ed538b84b72732a2c9ee0f);
+        
+    
+            var icon_750cfed8d3f29a7be5a6a5f09652556d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_19df9b4fd852bed02246f0942f221bab = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c6a5b67da6e3a72a03ec85dfe41ae5d5 = $(`<div id="html_c6a5b67da6e3a72a03ec85dfe41ae5d5" style="width: 100.0%; height: 100.0%;">     <div style="width: 260px; font-family: sans-serif; line-height: 1.4;">         <h4 style="margin:0; color:#333;">Tashkent</h4>         <h5 style="margin:0; color:gray;">Uzbekistan</h5>         <p style="font-size:11px; margin: 2px 0;">Population: 36 Million</p>         <hr style="border: 0; border-top: 1px solid #eee;">                  <p style="background-color: #f8f9fa; padding: 5px; border-left: 3px solid orange;">             <b>Reality Check:</b> Managed Reformist State         </p>                  <p style="font-size: 0.9em; color: #555;"><i><b>History Note:</b> Post-2016 Reform: The transition after decades of isolation toward regional opening.</i></p>                  <p style="font-weight: bold; color: black;">             Status: Stable / Rapid Growth         </p>     </div>     </div>`)[0];
+                popup_19df9b4fd852bed02246f0942f221bab.setContent(html_c6a5b67da6e3a72a03ec85dfe41ae5d5);
+            
+        
+
+        marker_e554c305adad35b59346ee0dcfc8e939.bindPopup(popup_19df9b4fd852bed02246f0942f221bab)
+        ;
+
+        
+    
+    
+            marker_e554c305adad35b59346ee0dcfc8e939.bindTooltip(
+                `<div>
+                     Tashkent, Uzbekistan
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e554c305adad35b59346ee0dcfc8e939.setIcon(icon_750cfed8d3f29a7be5a6a5f09652556d);
+            
+    
+            var marker_d5cc21a41472802117a0f5b458e1c003 = L.marker(
+                [52.2297, 21.0122],
+                {
+  "name": "Warsaw, Poland",
+}
+            ).addTo(feature_group_d71867bb00ed538b84b72732a2c9ee0f);
+        
+    
+            var icon_da45fce5c87a1e725640b583e0b3d9bb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_34a9c475eac18d943f60a348dc6e889e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2f958aa837e9430c0fa321d7ccfa274a = $(`<div id="html_2f958aa837e9430c0fa321d7ccfa274a" style="width: 100.0%; height: 100.0%;">     <div style="width: 260px; font-family: sans-serif; line-height: 1.4;">         <h4 style="margin:0; color:#333;">Warsaw</h4>         <h5 style="margin:0; color:gray;">Poland</h5>         <p style="font-size:11px; margin: 2px 0;">Population: 38 Million</p>         <hr style="border: 0; border-top: 1px solid #eee;">                  <p style="background-color: #f8f9fa; padding: 5px; border-left: 3px solid green;">             <b>Reality Check:</b> Illiberal Democracy / EU Pivot         </p>                  <p style="font-size: 0.9em; color: #555;"><i><b>History Note:</b> 1989 Solidarity: The movement that triggered the collapse of the Eastern Bloc.</i></p>                  <p style="font-weight: bold; color: black;">             Status: Stable / Frontline Logistics Hub         </p>     </div>     </div>`)[0];
+                popup_34a9c475eac18d943f60a348dc6e889e.setContent(html_2f958aa837e9430c0fa321d7ccfa274a);
+            
+        
+
+        marker_d5cc21a41472802117a0f5b458e1c003.bindPopup(popup_34a9c475eac18d943f60a348dc6e889e)
+        ;
+
+        
+    
+    
+            marker_d5cc21a41472802117a0f5b458e1c003.bindTooltip(
+                `<div>
+                     Warsaw, Poland
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d5cc21a41472802117a0f5b458e1c003.setIcon(icon_da45fce5c87a1e725640b583e0b3d9bb);
+            
+    
+            var marker_58a036eb85e0e7ee3c8870ad4e30a938 = L.marker(
+                [-35.2809, 149.13],
+                {
+  "name": "Canberra, Australia",
+}
+            ).addTo(feature_group_d71867bb00ed538b84b72732a2c9ee0f);
+        
+    
+            var icon_e37a6e2ece0f711c13c09b8e48ab2733 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_727f2789c046ce262b3f936e8433ef08 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0d7f81011fb207bf51ea61c5eb169613 = $(`<div id="html_0d7f81011fb207bf51ea61c5eb169613" style="width: 100.0%; height: 100.0%;">     <div style="width: 260px; font-family: sans-serif; line-height: 1.4;">         <h4 style="margin:0; color:#333;">Canberra</h4>         <h5 style="margin:0; color:gray;">Australia</h5>         <p style="font-size:11px; margin: 2px 0;">Population: 26 Million</p>         <hr style="border: 0; border-top: 1px solid #eee;">                  <p style="background-color: #f8f9fa; padding: 5px; border-left: 3px solid green;">             <b>Reality Check:</b> Strong Democracy / Stable Institutions         </p>                  <p style="font-size: 0.9em; color: #555;"><i><b>History Note:</b> 1901 Federation: The peaceful union of six colonies into a single nation.</i></p>                  <p style="font-weight: bold; color: black;">             Status: Stable / Pacific Strategic Hub         </p>     </div>     </div>`)[0];
+                popup_727f2789c046ce262b3f936e8433ef08.setContent(html_0d7f81011fb207bf51ea61c5eb169613);
+            
+        
+
+        marker_58a036eb85e0e7ee3c8870ad4e30a938.bindPopup(popup_727f2789c046ce262b3f936e8433ef08)
+        ;
+
+        
+    
+    
+            marker_58a036eb85e0e7ee3c8870ad4e30a938.bindTooltip(
+                `<div>
+                     Canberra, Australia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_58a036eb85e0e7ee3c8870ad4e30a938.setIcon(icon_e37a6e2ece0f711c13c09b8e48ab2733);
+            
+    
+            feature_group_d71867bb00ed538b84b72732a2c9ee0f.addTo(map_e2c0ebf52e1125262999fb4aec54f4f7);
+        
+    
+            var feature_group_d71867bb00ed538b84b72732a2c9ee0fsearchControl = new L.Control.Search({
+                layer: feature_group_d71867bb00ed538b84b72732a2c9ee0f,
+                
+                propertyName: 'name',
+                
+                collapsed: false,
+                textPlaceholder: 'Type city or country...',
+                position:'topleft',
+            
+                initial: false,
+                
+                hideMarkerOnCollapse: true
+            
+                });
+                feature_group_d71867bb00ed538b84b72732a2c9ee0fsearchControl.on('search:locationfound', function(e) {
+                    feature_group_d71867bb00ed538b84b72732a2c9ee0f.setStyle(function(feature){
+                        return feature.properties.style
+                    })
+                    
+                    if(e.layer._popup)
+                        e.layer.openPopup();
+                })
+                feature_group_d71867bb00ed538b84b72732a2c9ee0fsearchControl.on('search:collapsed', function(e) {
+                        feature_group_d71867bb00ed538b84b72732a2c9ee0f.setStyle(function(feature){
+                            return feature.properties.style
+                    });
+                });
+            map_e2c0ebf52e1125262999fb4aec54f4f7.addControl( feature_group_d71867bb00ed538b84b72732a2c9ee0fsearchControl );
+
+        
+</script>
+</html>
